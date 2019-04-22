@@ -1,0 +1,21 @@
+@mixin font-face($font) {
+	@font-face {
+		font-family: $font;
+		src:
+			url('../fonts/B'+ $font +'.eot') format('eot'),
+			url('../fonts/B'+ $font +'.woff') format('woff'),
+			url('../fonts/B'+ $font +'.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+	}
+}
+@mixin gradient($colors) { // diagonal
+	$first: nth( nth($colors, 1), 1 );
+	$last: nth( nth( $colors, length($colors) ), 1 );
+	
+	background: $first;
+	background: -moz-linear-gradient(-45deg, $colors);
+	background: -webkit-linear-gradient(-45deg,  $colors);
+	background: linear-gradient(135deg, $colors);
+	filter: unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$first}', endColorstr='#{$last}', GradientType=1 )");
+}

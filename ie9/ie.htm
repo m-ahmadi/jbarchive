@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="css/materialize.css" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/jstree/style.min.css" />
+	
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<style>
+.a {
+	width: 200px;
+	height: 200px;
+	overflow: auto;
+	background:red;
+
+}
+</style>
+
+</head>
+<body>
+
+<div class="a">
+	asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+	asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+	asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+	asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+	asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+	asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+	asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+	asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+	asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+	asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+	asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+	asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+	asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+	asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+	
+	<div id="tree"></div>
+	
+	
+</div>
+
+
+
+
+
+
+
+
+<div class="wrap">
+
+	<div class="subgroup action-sec">
+		<p class="subgroup-title">رخداد</p>
+		<div class="myrow">
+			<div class="mycolumn">
+				<span class="checkbox-wrap">
+					<input type="checkbox" class="filled-in fn-settings-checkbox fn-subgroup-action" id="PERM_SEND_MAIL_BILL" />
+					<label for="PERM_SEND_MAIL_BILL"><div class="chktitle">مجوز ارسال قبض</div><div class="chkdesc">کاربر می تواند به دیگران قبض ارسال نمایید.</div><div class="ensec">SEND_MAIL_BILL</div></label>
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="subgroup service_admin-sec">
+		<p class="subgroup-title">مدیر سامانه</p>
+		<div class="myrow">
+			<div class="mycolumn">
+				<span class="checkbox-wrap">
+					<input type="checkbox" class="filled-in fn-settings-checkbox fn-subgroup-service_admin" id="PERM_RECORDS_MASTER" />
+					<label for="PERM_RECORDS_MASTER"><div class="chktitle">مجوز اعطای دسترسی مدیریت ریز مکالمات</div><div class="chkdesc">کاربر می تواند به مدیران محلی دسترسی  مدیریت ریز مکالمات بدهد.</div><div class="ensec">RECORDS_MASTER</div></label>
+				</span>
+			</div>
+		</div>
+		<div class="myrow">
+			<div class="mycolumn">
+				<span class="checkbox-wrap">
+					<input type="checkbox" class="filled-in fn-settings-checkbox fn-subgroup-service_admin" id="PERM_GET_USER_ADMIN_ACCESS" />
+					<label for="PERM_GET_USER_ADMIN_ACCESS"><div class="chktitle">مجوز مشاهده مدیریت دسترسی</div><div class="chkdesc">کاربر می تواند دسترسی مدیریتی مدیران محلی را مشاهده کند.</div><div class="ensec">GET_USER_ADMIN_ACCESS</div></label>
+				</span>
+			</div>
+			
+			<div class="mycolumn">
+				<span class="checkbox-wrap">
+					<input type="checkbox" class="filled-in fn-settings-checkbox fn-subgroup-service_admin" id="PERM_SET_USER_ADMIN_ACCESS" />
+					<label for="PERM_SET_USER_ADMIN_ACCESS"><div class="chktitle">مجوز تغییر مدیریت دسترسی</div><div class="chkdesc">کاربر می تواند دسترسی مدیریتی مدیران محلی را تغییر بدهد.</div><div class="ensec">SET_USER_ADMIN_ACCESS</div></label>
+				</span>
+			</div>
+		</div>
+		<div class="myrow">
+			<div class="mycolumn">
+				<span class="checkbox-wrap">
+					<input type="checkbox" class="filled-in fn-settings-checkbox fn-subgroup-service_admin" id="PERM_GET_USERS_WITH_ADMIN_ACCESS" />
+					<label for="PERM_GET_USERS_WITH_ADMIN_ACCESS"><div class="chktitle">مجوز دریافت لیست مدیران محلی</div><div class="chkdesc">کاربر می تواند لیست مدیران محلی را مشاهده کتد.</div><div class="ensec">GET_USERS_WITH_ADMIN_ACCESS</div></label>
+				</span>
+			</div>
+			<div class="mycolumn">
+				<span class="checkbox-wrap">
+					<input type="checkbox" class="filled-in fn-settings-checkbox fn-subgroup-service_admin" id="PERM_GET_USERS_WITH_PERMISSION" />
+					<label for="PERM_GET_USERS_WITH_PERMISSION"><div class="chktitle">مجوز دریافت لیست مدیران سامانه</div><div class="chkdesc">کاربر می تواند لیست مدیران سامانه را مشاهده کند.</div><div class="ensec">GET_USERS_WITH_PERMISSION</div></label>
+				</span>
+			</div>
+		</div>
+		<div class="myrow">
+			<div class="mycolumn">
+				<span class="checkbox-wrap">
+					<input type="checkbox" class="filled-in fn-settings-checkbox fn-subgroup-service_admin" id="PERM_GET_PERMISSION" />
+					<label for="PERM_GET_PERMISSION"><div class="chktitle">مجوز مشاهده مجوزهای کاربران</div><div class="chkdesc">کاربر می تواند مجوزهای دیگر کاربران را مشاهده کند.</div><div class="ensec">GET_PERMISSION</div></label>
+				</span>
+			</div>
+			<div class="mycolumn">
+				<span class="checkbox-wrap">
+					<input type="checkbox" class="filled-in fn-settings-checkbox fn-subgroup-service_admin" id="PERM_SET_PERMISSION" />
+					<label for="PERM_SET_PERMISSION"><div class="chktitle">مجوز تغییر مجوزهای کاربران</div><div class="chkdesc">کاربر می تواند مجوزهای دیگر کاربران را تغییر بدهد.</div><div class="ensec">SET_PERMISSION</div></label>
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="subgroup local_admin-sec">
+		<p class="subgroup-title">مدیر محلی</p>
+		<div class="myrow">
+			<div class="mycolumn">
+				<span class="checkbox-wrap">
+					<input type="checkbox" class="filled-in fn-settings-checkbox fn-subgroup-local_admin" id="PERM_SET_USER_VIEW_ACCESS" />
+					<label for="PERM_SET_USER_VIEW_ACCESS"><div class="chktitle">مجوز تغییر دسترسی نمایش</div><div class="chkdesc">کاربر می تواند مجوزهای دسترسی نمایشی کاربران را تغییر بدهد.</div><div class="ensec">SET_USER_VIEW_ACCESS</div></label>
+				</span>
+			</div>
+			<div class="mycolumn">
+				<span class="checkbox-wrap">
+					<input type="checkbox" class="filled-in fn-settings-checkbox fn-subgroup-local_admin" id="PERM_GET_USER_VIEW_ACCESS" />
+					<label for="PERM_GET_USER_VIEW_ACCESS"><div class="chktitle">مجوز مشاهده دسترسی نمایش</div><div class="chkdesc">کاربر می تواند مجوزهای دسترسی نمایشی کاربران را مشاهده کند.</div><div class="ensec">GET_USER_VIEW_ACCESS</div></label>
+				</span>
+			</div>
+		</div>
+		<div class="myrow">
+			<div class="mycolumn">
+				<span class="checkbox-wrap">
+					<input type="checkbox" class="filled-in fn-settings-checkbox fn-subgroup-local_admin" id="PERM_GET_USERS_WITH_VIEW_ACCESS" />
+					<label for="PERM_GET_USERS_WITH_VIEW_ACCESS"><div class="chktitle">مجوز دریافت لیست مدیران گروه</div><div class="chkdesc">کاربر می تواند لیست مدیران گروه را مشاهده کند.</div><div class="ensec">GET_USERS_WITH_VIEW_ACCESS</div></label>
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="subgroup manager-sec">
+		<p class="subgroup-title">مدیر گروه</p>
+		<div class="myrow">
+			<div class="mycolumn">
+				<span class="checkbox-wrap">
+					<input type="checkbox" class="filled-in fn-settings-checkbox fn-subgroup-manager disabled" id="PERM_GET_USER_INFO" />
+					<label for="PERM_GET_USER_INFO"><div class="chktitle">مجوز دریافت مشخصات کاربران</div><div class="chkdesc">کاربر می تواند مشخصات عمومی کاربران را مشاهده کند.</div><div class="ensec">GET_USER_INFO</div></label>
+				</span>
+			</div>
+		</div>
+		<div class="myrow">
+			<div class="mycolumn">
+				<span class="checkbox-wrap">
+					<input type="checkbox" class="filled-in fn-settings-checkbox fn-subgroup-manager" id="PERM_GET_GROUPS_COUNTERS" />
+					<label for="PERM_GET_GROUPS_COUNTERS"><div class="chktitle">مجوز دریافت سرجمع گروه ها</div><div class="chkdesc">کاربر محدود به دسترسی تخصیص داده شده، می تواند اطلاعات سرجمع گروه ها را مشاهده کند.</div><div class="ensec">GET_GROUPS_COUNTERS</div></label>
+				</span>
+			</div>
+			<div class="mycolumn">
+				<span class="checkbox-wrap">
+					<input type="checkbox" class="filled-in fn-settings-checkbox fn-subgroup-manager" id="PERM_GET_GROUPS_LIST" />
+					<label for="PERM_GET_GROUPS_LIST"><div class="chktitle">مجوز دریافت لیست گروه ها</div><div class="chkdesc">کاربر محدود به دسترسی تخصیص داده شده، می تواند لیست گروه ها را مشاهده کند.</div><div class="ensec">GET_GROUPS_LIST</div></label>
+				</span>
+			</div>
+		</div>
+		<div class="myrow">
+			<div class="mycolumn">
+				<span class="checkbox-wrap">
+					<input type="checkbox" class="filled-in fn-settings-checkbox fn-subgroup-manager" id="PERM_GET_COUNTERS" />
+					<label for="PERM_GET_COUNTERS"><div class="chktitle">مجوز دریافت سرجمع کاربران</div><div class="chkdesc">کاربر می تواند اطلاعات سرجمع کاربران را مشاهده کند.</div><div class="ensec">GET_COUNTERS</div></label>
+				</span>
+			</div>
+			<div class="mycolumn">
+				<span class="checkbox-wrap">
+					<input type="checkbox" class="filled-in fn-settings-checkbox fn-subgroup-manager" id="PERM_GET_RECORDS" />
+					<label for="PERM_GET_RECORDS"><div class="chktitle">مجوز دریافت ریز مکالمات کاربران</div><div class="chkdesc">کاربر محدود به دسترسی تخصیص داده شده، می تواند ریز مکالمات کاربران را مشاهده کند.</div><div class="ensec">GET_RECORDS</div></label>
+				</span>
+			</div>
+		</div>
+	</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+<script type="text/javascript" src="js/jstree.min.js"></script>
+
+
+<script type="text/javascript" src="js/m.js"></script>
+</body>
+</html>

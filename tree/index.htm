@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>سامانه شهرداری</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-rtl.css"/>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
+	<link rel="stylesheet" type="text/css" href="jstree/dist/themes/default/style.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/awesomplete.css"/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css"/>
+	
+	<link rel="stylesheet" type="text/css" href="css/alertify.core.css"/>
+	<link rel="stylesheet" type="text/css" href="css/alertify.default.css"/>
+	<!-- <link rel="stylesheet" type="text/css" href="css/alertify.bootstrap.css"/> -->
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<!-- <link rel="stylesheet" type="text/css" href="extjs/build/classic/theme-crisp/resources/theme-crisp-all.css"/> -->
+	
+</head>
+
+<body>
+
+<header class="" >
+	
+<nav class="navbar navbar-inverse m-brn">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="">شهرداری</a>
+		 <img alt="Brand" src="images/lg3.png" width="100" height="100">
+	</div>
+
+	<ul class="nav navbar-nav">
+		<li class="active"><a href="#">مدیران</a></li>
+		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">شورای شهر <span class="caret"></span></a>
+			<ul class="dropdown-menu">
+				<li><a href="#">مدیریت</a></li>
+				<li><a href="#">کنترل بحران</a></li>
+				<li><a href="#">نیروی انسانی</a></li>
+			</ul>
+		</li>
+		<li><a href="#">کاربران</a></li>
+		<li><a href="#">ریاست</a></li>
+	</ul>
+	<ul class="nav navbar-nav navbar-left">
+		<li><a href="#"><span class="glyphicon glyphicon-user"></span> ثبت نام</a></li>
+		<li><a href="login.htm"><span class="glyphicon glyphicon-log-in"></span> ورود</a></li>
+	</ul>
+</nav>
+
+</header>
+	
+	
+<div id="contents" class="container-fluid">
+	
+
+<!-- <ul class="nav nav-tabs">
+	<li class="active"><a href="#t1" data-toggle="tab">####</a></li>
+	<li><a href="#t2" data-toggle="tab">@@@@</a></li>
+	<li><a href="#t3" data-toggle="tab">$$$$$</a></li>
+</ul>
+<div class="tab-content">
+	<div class="tab-pane active" id="t1">tab 1 content</div>
+	<div class="tab-pane" id="t2">tab 2 content</div>
+	<div class="tab-pane" id="t3">tab 3 content</div>
+</div> -->
+	
+	
+	
+	
+	
+	
+	
+	
+	<ul class="nav nav-tabs m-app-maintab">
+		<li class="active m-app-maintab-li"><a href="#tabs-1" data-toggle="tab" class="m-app-maintab-item">مدیر کل</a></li>
+		<li class="m-app-maintab-li"><a href="#tabs-2" data-toggle="tab" class="m-app-maintab-item">مدیر محلی</a></li>
+		<li class="m-app-maintab-li"><a href="#tabs-3" data-toggle="tab" class="m-app-maintab-item">سرپرست</a></li>
+		<li class="m-app-maintab-li"><a href="#tabs-4" data-toggle="tab" class="m-app-maintab-item">کاربر ساده</a></li>
+	</ul>
+	
+<div class="tab-content">
+	<div class="tab-pane active panel panel-default text-center m-app-mainpanel" id="tabs-1">
+			<div class="panel-heading m-app-mainpanel-header">
+				مدیریت
+			</div>
+			<div class="panel-body col-md-12 m-app-mainpanel-body">
+					
+				<!-- <div class="col-md-12">
+					<h1 class="bg-success col-md-4 text-center col-md-offset-4">Manager Panel</h1>
+				</div> -->
+				
+				<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@	1	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+				
+				
+				<div class="col-md-6">
+					<div class="panel panel-default m-app-subpanels">
+						<div class="panel-heading m-app-subpanel-header"><span class="glyphicon glyphicon-user"></span> مشخصات</div>
+						<div class="panel-body">
+							<input id="autocomplete_1" type="text" class="  col-md-12 " placeholder="جست و جوی مدیران" style="margin-bottom:1em;">
+							<h1 class="m-margin-auto "><span class="col-md-5 label label-default m-br-01em fn-profile-label"></span></h1>
+							
+							<img id="fn-profile-img" class="thumbnail col-md-4 img-responsive m-mb-1em m-margin-auto m-br-2em" src="images/profpic.png" alt="Profile Picture">
+							
+							<table class="table table-condensed table-responsive table-hover col-md-10 m-margin-auto">
+								<tbody>
+									<tr>
+										<th><span class="glyphicon glyphicon-user"></span> نام</th>
+										<td id="fn-profile-firstname"></td>
+									</tr>
+									<tr>
+										<th><span class="glyphicon glyphicon-info-sign"></span> نام خانوادگی</th>
+										<td id="fn-profile-lastname"></td>
+									</tr>
+									<tr>
+										<th><span class="glyphicon glyphicon-envelope"></span> ایمیل</th>
+										<td id="fn-profile-email"></td>
+									</tr>
+									<tr>
+										<th><span class="glyphicon glyphicon-file"></span> سمت</th>
+										<td id="fn-profile-title"></td>
+									</tr>
+									<tr>
+										<th><span class="glyphicon glyphicon-earphone"></span> تلفن</th>
+										<td id="fn-profile-phone"></td>
+									</tr>
+								</tbody>
+							</table>
+							
+						</div>
+					</div>
+				</div>
+				
+				
+				
+				
+				<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@	2	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+				
+				
+				
+				
+				<div class="col-md-6">
+					<div class="panel panel-default m-app-subpanels">
+						<div class="panel-heading m-app-subpanel-header">دسترسی کلی</div>
+						<div class="panel-body" id="fn-jstree_demo_div-parent">
+							<input id="autocomplete_2" type="text" class=" col-md-12 " placeholder="جست و جوی کاربران" style="margin-bottom: 1em;">
+							
+							<div class="btn-toolbar col-md-12 text-right" role="toolbar" style="margin-bottom: 1em;">
+								<div class=" btn-group btn-group-xs">
+									<!-- <button id="button" class="btn btn-default m-grads-btn-main"> مشاهده کاربران <span class="glyphicon glyphicon-off"></span></button> -->
+									<button id="fn-jstree_demo_div-open_all" class="btn btn-default disabled m-grads-btn-main fn-treetoolbar"> باز کردن همه <span class="glyphicon glyphicon-plus"></span></button>
+									<button id="fn-jstree_demo_div-close_all" class="btn btn-default disabled m-grads-btn-main fn-treetoolbar">بستن همه <span class="glyphicon glyphicon-minus"></span></button>
+									<button id="fn-jstree_demo_div-select_all" class="btn btn-default disabled m-grads-btn-main fn-treetoolbar">انتخاب همه <span class="glyphicon glyphicon-ok"></span></button>
+									<button id="fn-jstree_demo_div-deselect_all" class="btn btn-default disabled m-grads-btn-main fn-treetoolbar">عدم اتخاب همه <span class="glyphicon glyphicon-remove"></span></button>
+									<button id="fn-jstree_demo_div-give_access" class="btn btn-default disabled m-grads-btn fn-give_access">اعمال دسترسی <span class="glyphicon glyphicon-send"></span></button>
+								</div>
+							</div>
+							<!-- <div class="btn-toolbar col-md-12 text-left " role="toolbar" style="margin-bottom: 1em;">
+								<div class="btn-group btn-group-sm text-left" data-toggle="buttons">
+									 <label id="fn-short_priv" class="btn btn-default disabled fn-treetoolbar active"><input type="radio" />دسترسی جزیی</label>
+									 <label id="fn-full_priv" class="btn btn-default disabled fn-treetoolbar"><input type="radio" />دسترسی کلی</label>
+								</div>
+								
+							</div> -->
+							<div id="jstree_demo_div" class="col-md-2 text-right"></div>
+						</div>
+						
+					</div>
+				</div>
+				
+				
+				
+				
+				
+				<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@	3	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+				
+				
+				
+				
+				<div class="col-md-6">
+					 <!-- col-md-12 -->
+					<div class="panel panel-default m-app-subpanels">
+						<div class="panel-heading m-app-subpanel-header">مدیران دارای دسترسی</div>
+						<div class="panel-body">
+							<button id="fn-update_admin_list" class="btn btn-default btn-sm m-grads-btn-main m-mb-1em">به روز رسانی لیست <span class="glyphicon glyphicon-refresh"></span></button>
+							
+							<!-- <ul class="list-unstyled col-md-8 text-right m-margin-auto" >
+							
+								<li><button class="btn btn-default btn-xs col-md-8 m-grads-btn-main m-mb-05em fn-adminlist-item">item</button></li>
+								<li><button class="btn btn-default btn-xs col-md-8 m-grads-btn-main m-mb-05em fn-adminlist-item">item</button></li>
+								
+							</ul> -->
+							
+							<table class="table table-condensed" id="fn-admin_list">
+								<!-- <tr>
+									<td class="btn btn-default col-md-12 fn-adminlist-item">محمد احمدی</td>
+								</tr>
+								<tr>
+									<td class="btn btn-default col-md-12 fn-adminlist-item ">محمد احمدی</td>
+								</tr> -->
+							</table>
+						</div>
+					</div>
+				</div>
+				
+				
+					
+				
+				
+				<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@	4	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+				
+				
+				
+				
+				<div class="col-md-6">
+					<div class="panel panel-default m-app-subpanels">
+						<div class="panel-heading m-app-subpanel-header">دسترسی جزیی</div>				
+						<div class="panel-body" id="fn-jstree_demo_div_2-parent">
+							<div class="btn-toolbar col-md-12 text-right" role="toolbar" style="margin-bottom: 1em;">
+								<div class=" btn-group btn-group-xs">
+									<!-- <button id="button" class="btn btn-default m-grads-btn-main"> مشاهده کاربران <span class="glyphicon glyphicon-off"></span></button> -->
+									<button id="fn-jstree_demo_div_2-open_all" class="btn btn-default disabled m-grads-btn-main fn-treetoolbar"> باز کردن همه <span class="glyphicon glyphicon-plus"></span></button>
+									<button id="fn-jstree_demo_div_2-close_all" class="btn btn-default disabled m-grads-btn-main fn-treetoolbar">بستن همه <span class="glyphicon glyphicon-minus"></span></button>
+									<button id="fn-jstree_demo_div_2-select_all" class="btn btn-default disabled m-grads-btn-main fn-treetoolbar">انتخاب همه <span class="glyphicon glyphicon-ok"></span></button>
+									<button id="fn-jstree_demo_div_2-deselect_all" class="btn btn-default disabled m-grads-btn-main fn-treetoolbar">عدم اتخاب همه <span class="glyphicon glyphicon-remove"></span></button>
+									<button id="fn-jstree_demo_div_2-give_access" class="btn btn-default disabled m-grads-btn fn-give_access">اعمال دسترسی <span class="glyphicon glyphicon-send"></span></button>
+								</div>
+							</div>
+							
+							
+						
+						
+						
+							<div id="jstree_demo_div_2" class="col-md-2 text-right"></div>
+						</div>
+					</div>
+				</div>
+				
+				
+				<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@	5	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+				
+				
+				
+				<div class="col-md-6">
+					<div class="panel panel-default m-app-subpanels">
+						<div class="panel-heading m-app-subpanel-header">انتخاب شده های کلی</div>				
+						<div class="panel-body" id="fn-jstree_demo_div_3-parent">
+							
+						
+						
+						
+							<div id="jstree_demo_div_3" class="col-md-2 text-right"></div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-6">
+					<div class="panel panel-default m-app-subpanels">
+						<div class="panel-heading m-app-subpanel-header">انتخاب شده های جزیی</div>				
+						<div class="panel-body" id="fn-jstree_demo_div_4-parent">
+							
+						
+						
+						
+							<div id="jstree_demo_div_4" class="col-md-2 text-right"></div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- <div class="panel-footer">Panel Footer
+				
+			</div> -->
+	</div>
+
+	
+	<div class="tab-pane active panel panel-default text-center m-app-mainpanel" id="tabs-2">
+			<div class="panel-heading m-app-mainpanel-header">
+				مدیریت
+			</div>
+			<div class="panel-body col-md-12 m-app-mainpanel-body">
+					
+				<!-- <div class="col-md-12">
+					<h1 class="bg-success col-md-4 text-center col-md-offset-4">Manager Panel</h1>
+				</div> -->
+				
+				<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@	1	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+				
+				
+				<div class="col-md-6">
+					<div class="panel panel-default m-app-subpanels">
+						<div class="panel-heading m-app-subpanel-header">مشخصات</div>
+						<div class="panel-body">
+							<input id="autocomplete_1" type="text" class="  col-md-12 " placeholder="جست و جوی مدیران" style="margin-bottom:1em;">
+							<h1 class="m-margin-auto "><span class="col-md-5 label label-default m-br-01em fn-profile-label"></span></h1>
+							
+							<img id="fn-profile-img" class="thumbnail col-md-4 img-responsive m-mb-1em m-margin-auto m-br-2em" src="images/profpic.png" alt="Profile Picture">
+							
+							<table class="table table-condensed table-responsive table-hover col-md-10 m-margin-auto">
+								<tbody>
+									<tr>
+										<th><span class="glyphicon glyphicon-user"></span> نام</th>
+										<td id="fn-profile-firstname"></td>
+									</tr>
+									<tr>
+										<th><span class="glyphicon glyphicon-info-sign"></span> نام خانوادگی</th>
+										<td id="fn-profile-lastname"></td>
+									</tr>
+									<tr>
+										<th><span class="glyphicon glyphicon-envelope"></span> ایمیل</th>
+										<td id="fn-profile-email"></td>
+									</tr>
+									<tr>
+										<th><span class="glyphicon glyphicon-file"></span> سمت</th>
+										<td id="fn-profile-title"></td>
+									</tr>
+									<tr>
+										<th><span class="glyphicon glyphicon-earphone"></span> تلفن</th>
+										<td id="fn-profile-phone"></td>
+									</tr>
+								</tbody>
+							</table>
+							
+						</div>
+					</div>
+				</div>
+				
+				
+				
+				
+				<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@	2	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+				
+				
+				
+				
+				<div class="col-md-6">
+					<div class="panel panel-default m-app-subpanels">
+						<div class="panel-heading m-app-subpanel-header">دسترسی کلی</div>
+						<div class="panel-body" id="fn-jstree_demo_div-parent">
+							<input id="autocomplete_2" type="text" class=" col-md-12 " placeholder="جست و جوی کاربران" style="margin-bottom: 1em;">
+							
+							<div class="btn-toolbar col-md-12 text-right" role="toolbar" style="margin-bottom: 1em;">
+								<div class=" btn-group btn-group-xs">
+									<!-- <button id="button" class="btn btn-default m-grads-btn-main"> مشاهده کاربران <span class="glyphicon glyphicon-off"></span></button> -->
+									<button id="fn-jstree_demo_div-open_all" class="btn btn-default disabled m-grads-btn-main fn-treetoolbar"> باز کردن همه <span class="glyphicon glyphicon-plus"></span></button>
+									<button id="fn-jstree_demo_div-close_all" class="btn btn-default disabled m-grads-btn-main fn-treetoolbar">بستن همه <span class="glyphicon glyphicon-minus"></span></button>
+									<button id="fn-jstree_demo_div-select_all" class="btn btn-default disabled m-grads-btn-main fn-treetoolbar">انتخاب همه <span class="glyphicon glyphicon-ok"></span></button>
+									<button id="fn-jstree_demo_div-deselect_all" class="btn btn-default disabled m-grads-btn-main fn-treetoolbar">عدم اتخاب همه <span class="glyphicon glyphicon-remove"></span></button>
+									<button id="fn-jstree_demo_div-give_access" class="btn btn-default disabled m-grads-btn fn-give_access">اعمال دسترسی <span class="glyphicon glyphicon-send"></span></button>
+								</div>
+							</div>
+							<!-- <div class="btn-toolbar col-md-12 text-left " role="toolbar" style="margin-bottom: 1em;">
+								<div class="btn-group btn-group-sm text-left" data-toggle="buttons">
+									 <label id="fn-short_priv" class="btn btn-default disabled fn-treetoolbar active"><input type="radio" />دسترسی جزیی</label>
+									 <label id="fn-full_priv" class="btn btn-default disabled fn-treetoolbar"><input type="radio" />دسترسی کلی</label>
+								</div>
+								
+							</div> -->
+							<div id="jstree_demo_div" class="col-md-2 text-right"></div>
+						</div>
+						
+					</div>
+				</div>
+				
+				
+				
+				
+				
+				<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@	3	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+				
+				
+				
+				
+				
+				
+				
+					
+				
+				
+				<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@	4	@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+				
+				
+				
+				
+				<div class="col-md-6">
+					<div class="panel panel-default m-app-subpanels">
+						<div class="panel-heading m-app-subpanel-header">دسترسی جزیی</div>				
+						<div class="panel-body" id="fn-jstree_demo_div_2-parent">
+							<div class="btn-toolbar col-md-12 text-right" role="toolbar" style="margin-bottom: 1em;">
+								<div class=" btn-group btn-group-xs">
+									<!-- <button id="button" class="btn btn-default m-grads-btn-main"> مشاهده کاربران <span class="glyphicon glyphicon-off"></span></button> -->
+									<button id="fn-jstree_demo_div_2-open_all" class="btn btn-default disabled m-grads-btn-main fn-treetoolbar"> باز کردن همه <span class="glyphicon glyphicon-plus"></span></button>
+									<button id="fn-jstree_demo_div_2-close_all" class="btn btn-default disabled m-grads-btn-main fn-treetoolbar">بستن همه <span class="glyphicon glyphicon-minus"></span></button>
+									<button id="fn-jstree_demo_div_2-select_all" class="btn btn-default disabled m-grads-btn-main fn-treetoolbar">انتخاب همه <span class="glyphicon glyphicon-ok"></span></button>
+									<button id="fn-jstree_demo_div_2-deselect_all" class="btn btn-default disabled m-grads-btn-main fn-treetoolbar">عدم اتخاب همه <span class="glyphicon glyphicon-remove"></span></button>
+									<button id="fn-jstree_demo_div_2-give_access" class="btn btn-default disabled m-grads-btn fn-give_access">اعمال دسترسی <span class="glyphicon glyphicon-send"></span></button>
+								</div>
+							</div>
+							
+							
+						
+						
+						
+							<div id="jstree_demo_div_2" class="col-md-2 text-right"></div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- <div class="panel-footer">Panel Footer
+				
+			</div> -->
+	</div>
+	<div class="tab-pane" id="tabs-3">
+		<h1>سرپرست</h1>
+	</div>
+	<div class="tab-pane" id="tabs-4">
+		<h1>کاربر ساده</h1>
+	</div>
+</div>
+	
+	
+	
+	
+	
+	
+	
+	
+</div>
+
+<footer class="text-center">
+	
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="js/jq.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/underscore.js"></script>
+<script type="text/javascript" src="js/backbone.js"></script>
+<script type="text/javascript" src="jstree/dist/jstree.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/awesomplete.js"></script>
+<script type="text/javascript" src="js/bootbox.min.js"></script>
+<script type="text/javascript" src="js/alertify.js"></script>
+<!-- <script type="text/javascript" src="jstree-grid/jstreegrid.js"></script> -->
+<script type="text/javascript" src="js/base64.min.js"></script>
+<!-- <script type="text/javascript" src="js/utf8.js"></script> -->
+<script type="text/javascript" src="js/app/fn.js"></script>
+<script type="text/javascript" src="js/app/main.js"></script>
+
+
+<!-- <script type="text/javascript" src="extjs/build/ext-all-debug.js"></script> -->
+<!-- <script type="text/javascript" src="extjs/build/classic/theme-crisp/theme-crisp.js"></script> -->
+
+</body>
+</html>

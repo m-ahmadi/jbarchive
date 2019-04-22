@@ -1,0 +1,151 @@
+@import 'mixins';
+@include font-face('Yekan', 'BYekan');
+@include font-face('Mj_Beirut_Lt_X3', 'Mj_Beirut_Lt_X3');
+@include font-face('Calibri', 'Calibri');
+
+$header-font: 'Mj_Beirut_Lt_X3', 'Yekan', Tahoma;
+$color: #012d3d;//#552555;//#012d3d;254E55;  #39193A; banafsh*/
+$en-font: 'Calibri', Arial, Helvetica, sans-serif;
+$font: 'Yekan', Tahoma;
+$font-size: 14px;
+body {
+	direction: rtl; //@@@@@@@@@@ motherfuckeeeeeeeeeeeeer!!!!!!!!!!!!
+}
+.settings {
+	width: 100%;
+	// height: 700px;
+	padding: 10px;
+	.wrap {
+		width: 100%;
+		//position: relative;
+		//overflow-x: hidden;
+		.settings-overlay {
+			width: 100%;
+			height: 100%;
+			//position: absolute;
+			//z-index: 2;
+			background: rgba(0,0,0,0.5);
+			.preloader-wrapper {
+				display: block;
+				margin: 300px auto 0;
+			}
+		}
+		& > :nth-child(2) {
+			background: #DADACE;
+		}
+		& > :nth-child(3) {
+			background: #D4C0C0;
+		}
+		& > :nth-child(4) {
+			background: #CDD8C8;
+		}
+		& > :nth-child(5) {
+			background: #C9D3D8;
+		}
+	}
+	.subgroup {
+		direction: rtl;
+		border: 1px solid #DFDFDF;
+		padding: 0 10px;
+		
+		.nonechecked {
+			background-color: #FFAEAE;
+			color: white;
+			&:hover {
+				background-color: #FFAEAE;
+			}
+		}
+		.allchecked {
+			background-color: #C3FF97;
+			color: black;
+			&:hover {
+				background-color: #C3FF97;
+			}
+		}
+		.somechecked {
+			background-color: #913871;
+			color: #FFFFFF;
+			&:hover {
+				background-color: #913871;
+			}
+		}
+	}
+	.subgroup-title {
+		direction: rtl;
+		font-size: 18px !important;
+	}
+	.myrow {
+		width: 100%;
+		margin:20px 0;
+	}
+	.mycolumn {
+		width: 49%;
+		@media screen and (max-width: 800px) {
+			width: 100%;
+		}
+		display: inline-block;
+	}
+	.checkbox-wrap {
+		direction: rtl;
+		
+		label {
+			padding-left: initial;	// overwriting materialize
+			font-size: 12px;		// overwriting materialize
+			color: black;			// overwriting materialize
+			padding-right: 25px;	// overwriting materialize
+			line-height: 14px;		// overwriting materialize
+		}
+		.chktitle {
+			font-size: 13px;
+		}
+		.chkdesc {
+			color: #7F7F7F;
+		}
+		.ensec {
+			line-height: 18px;
+			font-size: 10px;
+			color: #7F7F7F;
+		}
+		
+		// making filled-in checkboxes right to left
+		[type="checkbox"].filled-in:checked + label:before {
+			//right: 10px;
+		}
+		[type="checkbox"].filled-in + label:before,
+		[type="checkbox"].filled-in + label:after {
+			right: 0;
+		}
+		[type="checkbox"] + label:before {
+			margin-right: 11px;
+		}
+	}
+	.grouptitle {
+		font-size: 18px !important;
+	}
+	// @@@@@@@@@@@@@@@@@@	TEMP	 @@@@@@@@@@@@@@@@@@
+	.fn-subgroup-btn {
+		display: none;
+	}
+	// @@@@@@@@@@@@@@@@@@	TEMP	 @@@@@@@@@@@@@@@@@@
+
+	
+	
+	
+	
+	th, td {
+		border-radius: 0 !important;
+	}
+
+	.abbas1 {
+		background: #D8D8C7;
+	}
+	.abbas2 {
+		background: #D4B6B6;
+	}
+	.abbas3 {
+		background: #C7D8BF;
+	}
+	.abbas4 {
+		background: #C5D5DC;
+	}
+}

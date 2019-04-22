@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>Tree Folder</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-rtl.css"/>
+	<link rel="stylesheet" type="text/css" href="jstree/dist/themes/default/style.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/awesomplete.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<!-- <link rel="stylesheet" type="text/css" href="extjs/build/classic/theme-crisp/resources/theme-crisp-all.css"/> -->
+	
+</head>
+
+<body>
+
+<header class="">
+	
+<nav class="navbar navbar-inverse nbr">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">شهرداری</a>
+		</div>
+		<div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">مدیران</a></li>
+				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">شورای شهر <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">مدیریت</a></li>
+						<li><a href="#">کنترل بحران</a></li>
+						<li><a href="#">نیروی انسانی</a></li>
+					</ul>
+				</li>
+				<li><a href="#">کاربران</a></li>
+				<li><a href="#">ریاست</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-left">
+				<li><a href="#"><span class="glyphicon glyphicon-user"></span> ثبت نام</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> ورود</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+</header>
+	
+	
+<div id="contents" class="container-fluid">
+	<div class="col-md-12"">
+	
+		<div class="panel panel-primary text-center bg-success">
+			<div class="panel-heading">
+				مدیریت
+			</div>
+			<div class="panel-body col-md-12">
+					
+					<!-- <div class="col-md-12">
+						<h1 class="bg-success col-md-4 text-center col-md-offset-4">Manager Panel</h1>
+					</div> -->
+					
+					<div class="col-md-3">
+						<!-- <div class=""> -->
+							<input id="autocomplete_1" type="text" class="text-center col-md-12 " placeholder="جست و جوی مدیران"> <!-- col-md-12 -->
+						<!-- </div> -->
+						<div class="panel panel-default" >
+							<div class="panel-body" style="height:320px">
+								
+								
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-3">
+						<div class="panel panel-default" style="height:328px">
+							<div class="panel-body">
+								<a href="#" class="col-md-12 btn btn-success btn-lg">profile picture</a>
+								<p>dapsdpasd ashd as do sd huasd asdu asdh audh dasd adudh aud audh sd  yg ys ah f asdh du yf sd
+								dapsdpasd ashd as do sd huasd asdu asdh audh dasd adudh aud audh sd  yg ys ah f asdh du yf sd
+								dapsdpasd ashd as do sd huasd asdu asdh audh dasd adudh aud audh sd  yg ys ah f asdh du yf sd
+								dapsdpasd ashd as do sd huasd asdu asdh audh dasd adudh aud audh sd  yg ys ah f asdh du yf sd</p>
+							</div>
+						</div>
+					</div>
+						
+					
+					
+					<div class="col-md-6">
+						<!-- <div class="col-md-12"> -->
+							<input id="autocomplete_2" type="text" class="col-md-12 text-center" placeholder="جست و جوی کاربران">
+						<!-- </div> -->
+						<div class="panel panel-default col-md-6" >
+							<div class="panel-body" style="" >
+								<div class="row col-md-12">
+									<a href="" class="btn btn-danger btn-sm">کلی</a>
+									<a href="" class="btn btn-danger btn-sm">جزیی</a>
+								</div>
+								
+								
+							</div>
+						</div>
+						<div class="panel panel-default col-md-6 panel-info">
+							<div class="panel-body" style="height:300px">
+								<p>dapsdpasd ashd as do sd huasd asdu asdh audh dasd adudh aud audh sd  yg ys ah f asdh du yf sd
+								dapsdpasd ashd as do sd huasd asdu asdh audh dasd adudh aud audh sd  yg ys ah f asdh du yf sd
+								dapsdpasd ashd as do sd huasd asdu asdh audh dasd adudh aud audh sd  yg ys ah f asdh du yf sd
+								dapsdpasd ashd as do sd huasd asdu asdh audh dasd adudh aud audh sd  yg ys ah f asdh du yf sd</p>
+								<div class="row col-md-12">
+									<a href="" class="btn btn-warning btn-sm">کلی</a>
+									<a href="" class="btn btn-warning btn-sm">جزیی</a>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					
+					
+					
+					<div class="col-md-6">
+						<div class="panel panel-default " style=" " id="maintree-panel">
+							<div class="panel-body" id="tree_parent">
+								<button id="button" class="btn btn-default pull-right mybtn">مشاهده کاربران</button>
+								<ul class="list-inline    ">
+									<li><button id="open_all" class="btn btn-default btn-xs mybtn disabled opt-btns">باز کردن همه</button></li>
+									<li><button id="close_all" class="btn btn-default btn-xs mybtn disabled opt-btns">بستن همه</button></li>
+									<li><button id="select_all" class="btn btn-default btn-xs mybtn disabled opt-btns">انتخاب همه</button></li>
+									<li><button id="deselect_all" class="btn btn-default btn-xs mybtn disabled opt-btns">عدم اتخاب همه</button></li>
+								</ul>
+								<div id="jstree_demo_div" class="col-md-2 pull-right"></div>
+							</div>
+						</div>
+					</div>
+			
+					<div class="col-md-6">
+						
+						<div class="panel panel-default " id="folder-panel">
+							<div class="panel-body" id="secondtree-parent">
+								<div id="jstree_demo_div_2" class="col-md-2 pull-right"></div>
+							</div>
+						</div>
+					</div>
+					
+						
+				
+			</div>
+			<div class="panel-footer">Panel Footer
+				
+			</div>
+		</div>
+		
+		
+
+	</div>
+	
+	
+	
+	
+	<div class="col-md-12" style="clear:both">
+		<h1>jsTree</h1>
+		
+		
+		<div class="form-group pull-left">
+			<textarea id="profile" class="form-control"></textarea>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	</div>
+	
+		
+</div>
+
+
+
+<footer class="text-center">
+	
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="js/jq.js"></script>
+<script type="text/javascript" src="jstree/dist/jstree.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/awesomplete.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!-- <script type="text/javascript" src="extjs/build/ext-all-debug.js"></script> -->
+<!-- <script type="text/javascript" src="extjs/build/classic/theme-crisp/theme-crisp.js"></script> -->
+
+</body>
+</html>

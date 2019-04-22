@@ -1,0 +1,195 @@
+[
+	{
+		"id" : "1",
+		"parent" : "#",
+		"text" : "دستگاه 1"
+	},
+	{
+		"id" : "2",
+		"parent" : "#",
+		"text" : "دستگاه 2"
+	},
+	{
+		"id" : "3",
+		"parent" : "#",
+		"text" : "دستگاه 3"
+	},
+	
+	
+	
+	
+	{
+		"id" : "port1",
+		"parent" : "1",
+		"text" : "پورت 1",
+		"icon" : "jstree-file"
+		
+	},
+	{
+		"id" : "port2",
+		"parent" : "1",
+		"text" : "پورت 2",
+		"icon" : "jstree-file"
+	},
+	{
+		"id" : "port3",
+		"parent" : "1",
+		"text" : "پورت 3",
+		"icon" : "jstree-file"
+		
+	},
+	{
+		"id" : "port4",
+		"parent" : "1",
+		"text" : "پورت 4",
+		"icon" : "jstree-file"
+	},
+	{
+		"id" : "port5",
+		"parent" : "1",
+		"text" : "پورت  5",
+		"icon" : "jstree-file"
+		
+	},
+	{
+		"id" : "port6",
+		"parent" : "1",
+		"text" : "پورت 5",
+		"icon" : "jstree-file"
+	},
+	{
+		"id" : "port7",
+		"parent" : "1",
+		"text" : "پورت  7",
+		"icon" : "jstree-file"
+		
+	},
+	{
+		"id" : "port8",
+		"parent" : "1",
+		"text" : "پورت  8",
+		"icon" : "jstree-file"
+	},
+	
+	
+	
+	
+	
+	
+	{
+		"id" : "port11",
+		"parent" : "2",
+		"text" : "پورت  1",
+		"icon" : "jstree-file"
+		
+	},
+	{
+		"id" : "port12",
+		"parent" : "2",
+		"text" : "پورت  2",
+		"icon" : "jstree-file"
+	},
+	{
+		"id" : "port13",
+		"parent" : "2",
+		"text" : "پورت  3",
+		"icon" : "jstree-file"
+		
+	},
+	{
+		"id" : "port14",
+		"parent" : "2",
+		"text" : "پورت  4",
+		"icon" : "jstree-file"
+	},
+	{
+		"id" : "port15",
+		"parent" : "2",
+		"text" : "پورت  5",
+		"icon" : "jstree-file"
+		
+	},
+	{
+		"id" : "port16",
+		"parent" : "2",
+		"text" : "پورت  6",
+		"icon" : "jstree-file"
+	},
+	{
+		"id" : "port17",
+		"parent" : "2",
+		"text" : "پورت  7",
+		"icon" : "jstree-file"
+		
+	},
+	{
+		"id" : "port18",
+		"parent" : "2",
+		"text" : "پورت  8",
+		"icon" : "jstree-file"
+	},
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	{
+		"id" : "port31",
+		"parent" : "3",
+		"text" : "پورت  1",
+		"icon" : "jstree-file"
+		
+	},
+	{
+		"id" : "port32",
+		"parent" : "3",
+		"text" : "پورت  2",
+		"icon" : "jstree-file"
+	},
+	{
+		"id" : "port33",
+		"parent" : "3",
+		"text" : "پورت  3",
+		"icon" : "jstree-file"
+		
+	},
+	{
+		"id" : "port34",
+		"parent" : "3",
+		"text" : "پورت  4",
+		"icon" : "jstree-file"
+	},
+	{
+		"id" : "port35",
+		"parent" : "3",
+		"text" : "پورت  5",
+		"icon" : "jstree-file"
+		
+	},
+	{
+		"id" : "port36",
+		"parent" : "3",
+		"text" : "پورت  6",
+		"icon" : "jstree-file"
+	},
+	{
+		"id" : "port37",
+		"parent" : "3",
+		"text" : "پورت  7",
+		"icon" : "jstree-file"
+		
+	},
+	{
+		"id" : "port38",
+		"parent" : "3",
+		"text" : "پورت  8",
+		"icon" : "jstree-file"
+	}
+]

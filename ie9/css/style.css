@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "Yekan";
+  src: url("../fonts/BYekan.eot");
+  src: url("../fonts/BYekan.eot?#iefix") format("embedded-opentype"), url("../fonts/BYekan.woff2") format("woff2"), url("../fonts/BYekan.woff") format("woff"), url("../fonts/BYekan.ttf") format("truetype"), url("../fonts/BYekan.svg#Yekan") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Mj_Beirut_Lt_X3";
+  src: url("../fonts/Mj_Beirut_Lt_X3.eot");
+  src: url("../fonts/Mj_Beirut_Lt_X3.eot?#iefix") format("embedded-opentype"), url("../fonts/Mj_Beirut_Lt_X3.woff2") format("woff2"), url("../fonts/Mj_Beirut_Lt_X3.woff") format("woff"), url("../fonts/Mj_Beirut_Lt_X3.ttf") format("truetype"), url("../fonts/Mj_Beirut_Lt_X3.svg#Mj_Beirut_Lt_X3") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Calibri";
+  src: url("../fonts/Calibri.eot");
+  src: url("../fonts/Calibri.eot?#iefix") format("embedded-opentype"), url("../fonts/Calibri.woff2") format("woff2"), url("../fonts/Calibri.woff") format("woff"), url("../fonts/Calibri.ttf") format("truetype"), url("../fonts/Calibri.svg#Calibri") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  direction: rtl; }
+
+.settings {
+  width: 100%;
+  padding: 10px; }
+  .settings .wrap {
+    width: 100%; }
+    .settings .wrap .settings-overlay {
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); }
+      .settings .wrap .settings-overlay .preloader-wrapper {
+        display: block;
+        margin: 300px auto 0; }
+    .settings .wrap > :nth-child(2) {
+      background: #DADACE; }
+    .settings .wrap > :nth-child(3) {
+      background: #D4C0C0; }
+    .settings .wrap > :nth-child(4) {
+      background: #CDD8C8; }
+    .settings .wrap > :nth-child(5) {
+      background: #C9D3D8; }
+  .settings .subgroup {
+    direction: rtl;
+    border: 1px solid #DFDFDF;
+    padding: 0 10px; }
+    .settings .subgroup .nonechecked {
+      background-color: #FFAEAE;
+      color: white; }
+      .settings .subgroup .nonechecked:hover {
+        background-color: #FFAEAE; }
+    .settings .subgroup .allchecked {
+      background-color: #C3FF97;
+      color: black; }
+      .settings .subgroup .allchecked:hover {
+        background-color: #C3FF97; }
+    .settings .subgroup .somechecked {
+      background-color: #913871;
+      color: #FFFFFF; }
+      .settings .subgroup .somechecked:hover {
+        background-color: #913871; }
+  .settings .subgroup-title {
+    direction: rtl;
+    font-size: 18px !important; }
+  .settings .myrow {
+    width: 100%;
+    margin: 20px 0; }
+  .settings .mycolumn {
+    width: 49%;
+    display: inline-block; }
+    @media screen and (max-width: 800px) {
+      .settings .mycolumn {
+        width: 100%; } }
+  .settings .checkbox-wrap {
+    direction: rtl; }
+    .settings .checkbox-wrap label {
+      padding-left: initial;
+      font-size: 12px;
+      color: black;
+      padding-right: 25px;
+      line-height: 14px; }
+    .settings .checkbox-wrap .chktitle {
+      font-size: 13px; }
+    .settings .checkbox-wrap .chkdesc {
+      color: #7F7F7F; }
+    .settings .checkbox-wrap .ensec {
+      line-height: 18px;
+      font-size: 10px;
+      color: #7F7F7F; }
+    .settings .checkbox-wrap [type="checkbox"].filled-in + label:before,
+    .settings .checkbox-wrap [type="checkbox"].filled-in + label:after {
+      right: 0; }
+    .settings .checkbox-wrap [type="checkbox"] + label:before {
+      margin-right: 11px; }
+  .settings .grouptitle {
+    font-size: 18px !important; }
+  .settings .fn-subgroup-btn {
+    display: none; }
+  .settings th, .settings td {
+    border-radius: 0 !important; }
+  .settings .abbas1 {
+    background: #D8D8C7; }
+  .settings .abbas2 {
+    background: #D4B6B6; }
+  .settings .abbas3 {
+    background: #C7D8BF; }
+  .settings .abbas4 {
+    background: #C5D5DC; }
+
+/*# sourceMappingURL=style.css.map */
